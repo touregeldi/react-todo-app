@@ -1,0 +1,36 @@
+.container {
+  /* border: 2px solid red; */
+}
+
+.input {
+  padding: 10px;
+  border: 0;
+  /* border-bottom: 1px solid gray; */
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  outline: none;
+  margin: 10px;
+}
+
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px;
+  border: 2px solid #a844dd;
+  background-color: white;
+  color: #a844dd;
+  font-weight: 700;
+  border-radius: 18px;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #a844dd;
+  color: white;
+}
+
+.button:active {
+  border: 2px solid #a844dd;
+  background-color: white;
+  color: #a844dd;
+}

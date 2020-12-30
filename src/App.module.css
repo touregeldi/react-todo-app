@@ -1,0 +1,22 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.headerContainer {
+  line-height: 0%;
+  /* border: 1px solid red; */
+  color: #a844dd;
+  font-weight: 500;
+  /* border: 1px solid red; */
+}
+
+.header {
+  font-size: 5rem;
+}
