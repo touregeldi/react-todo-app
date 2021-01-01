@@ -1,8 +1,13 @@
+import React from 'react';
+import {connect} from 'react-redux'
 import style from './App.module.css';
 import TodoForm from './components/TodoForm/TodoForm';
 import TodoList from './components/TodoList/TodoList';
 
-function App() {
+
+
+function App(props) {
+
   return (
     <div className={style.container}>
       <div className={style.headerContainer}>
@@ -14,4 +19,8 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = (props, state) => {
+  return { }
+}
+
+export default connect(mapStateToProps)(App);

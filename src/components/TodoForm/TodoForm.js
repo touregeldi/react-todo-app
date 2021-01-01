@@ -1,8 +1,8 @@
 import React, { useState }from 'react';
 import style from './TodoForm.module.css'
 import { connect } from 'react-redux'
-import { addTodo } from '../../redux/actions/todo';
-import { v4 as uuidv4 } from 'uuid';
+import { startAddTodo } from '../../redux/actions/todo';
+
 
 
 function TodoForm(props) {
@@ -13,8 +13,7 @@ function TodoForm(props) {
         if(state===''){
             return
         }
-        props.dispatch(addTodo({
-            id: uuidv4(),
+        props.dispatch(startAddTodo({
             body: state,
             done:false
         }))
